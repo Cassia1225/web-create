@@ -1,0 +1,14 @@
+#main{
+    background-size: 550px;
+    background-position: center;
+    color: aqua;
+    font-style: italic;
+    font-size: 40px;
+    background-image: url(../image/IMG_4003.JPG);
+} 
+
+#image1{
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+}
