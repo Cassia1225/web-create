@@ -191,6 +191,39 @@ section h2 {
     transform: scale(1.03);
 }
 
+/* 新歓・入部希望 */
+.join {
+    text-align: center;
+}
+
+.join p {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.join-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.join-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #4caf93;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.2s;
+}
+
+.join-button:hover {
+    background: #3d9478;
+}
+
 /* フッター */
 footer {
     text-align: center;
