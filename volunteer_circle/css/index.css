@@ -201,6 +201,13 @@ section h2 {
     margin-bottom: 1.5rem;
 }
 
+.join-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .join-button {
     display: inline-block;
     padding: 1rem 2.5rem;
