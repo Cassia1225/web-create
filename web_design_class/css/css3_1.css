@@ -1,0 +1,13 @@
+.form-item {
+    margin-bottom: 20px;
+}
+
+.form-item label {
+    margin-right: 15px;
+    cursor: pointer; /* マウスオーバー時に指のマーク */
+}
+
+.vertical-item label {
+    display: block;   
+    margin-bottom: 8px;  
+}

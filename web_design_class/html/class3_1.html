@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第３回課題</title>
+    <link rel="stylesheet" href="../css/css3_1.css">
+</head>
+<body>
+    <form action="http://www.nihon-u.ac.jp/cgi-bin/hoge.cgi" method="post">
+        
+        <div class="form-item">
+            <label>お名前 : <input type="text" name="username" value="名無しの権兵衛"></label> さん
+        </div>
+
+        <div class="form-item">
+            <span>性別 : </span>
+            <label><input type="radio" name="gender" value="male"> 男性</label>
+            <label><input type="radio" name="gender" value="female"> 女性</label>
+        </div>
+
+        <div class="form-item">
+            <span>好きな食べ物 : </span>
+            <label><input type="checkbox" name="food" value="meat"> お肉</label>
+            <label><input type="checkbox" name="food" value="fish"> お魚</label>
+            <label><input type="checkbox" name="food" value="veg"> 野菜</label>
+        </div>
+
+        <div class="form-item">
+            <label>血液型 : <select name="blood_type">
+                    <option value="a型">A型</option>
+                    <option value="b型">B型</option>
+                    <option value="ab型">AB型</option>
+                    <option value="o型">O型</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="form-item vertical-item">
+            <label>ご自由にどうぞ :</label>
+            <textarea name="selfwrite" cols="40" rows="5"></textarea>
+        </div>
+
+        <div class="form-item">
+            <input type="submit" value="送信">
+        </div>
+
+    </form>
+</body>
+</html>
