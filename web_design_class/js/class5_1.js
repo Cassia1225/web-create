@@ -1,12 +1,9 @@
-let n = [];
+show_text = document.getElementById('text');
+show_text.textContent = "配列nの棒グラフ";
 
-n[0] = 12;
-n[1] = 34;
-n[2] = 56;
-n[3] = 78;
-n[4] = 90;
+n = [12,34,56,78,90];
 
-let total = 0;
+total = 0;
 
 for (let i = 0; i < n.length; i++) {
   total = total + n[i];
@@ -14,21 +11,22 @@ for (let i = 0; i < n.length; i++) {
 
 alert(total);
 
-let graph = document.getElementById("graph");
+gankin = 1000;
+riritu = 0.07;
+nensu = 20;
 
-for (let i = 0; i < n.length; i++) {
-  let barBox = document.createElement("div");
-  barBox.className = "bar-box";
+graph = document.getElementById('graph')
 
-  let bar = document.createElement("div");
-  bar.className = "bar";
-  bar.style.height = n[i] * 2 + "px";
+for (i=1; i<= nensu; i++) {
+  kane = gankin * Math.pow((1+riritu),i);
+  barH = kane / 10;
+  
+  graph.insertAdjacentHTML(
+    'beforeend',
+    `<img src="./../image/pixel.gif" width="8" height="${barH}">`
 
-  let value = document.createElement("div");
-  value.className = "value";
-  value.textContent = n[i];
-
-  barBox.appendChild(bar);
-  barBox.appendChild(value);
-  graph.appendChild(barBox);
+  );
 }
+
+
+
