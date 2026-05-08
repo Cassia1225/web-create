@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボタンがクリックされたら２つのフィールドの値を加算してアラート表示</title>
+    <script src="./../js/click_sum_button.js"></script>
+</head>
+<body>
+    <!--このままだと、文字列同士の結合で計算をすることはできない。-->>
+    <form name="calcForm">
+        <p>値１：</p><input type="text" name="number1" value="7"><br>
+        <p>値２：</p><input type="text" name="number2" value="5"><br>
+        <input type="button" value="加算する" onclick="calc()">
+    </form>
+</body>
+</html>

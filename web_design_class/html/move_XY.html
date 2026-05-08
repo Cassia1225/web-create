@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハイパーリンクで座標を動かす</title>
+    <script src="./../js/move_XY.js"></script>
+</head>
+<body>
+    <a href="#" onClick="setImageXY('myImage1',0,0)">myImage1 画像を座標(0,0)に移動させる</a><br>
+    <a href="#" onClick="setImageXY('myImage1',80,20)">myImage1 画像を座標(80,20)に移動させる</a><br>
+    <img src="./../image/sample1.png" name="myImage1" style="position:absolute;left:50px;top:60px;"><br>
+    <a href="#" onClick="setImageXY('myImage2',10,20)">myImage2 画像を座標(10,20)に移動させる</a><br>
+    <a href="#" onClick="setImageXY('myImage2',120,80)">myImage2 画像を座標(120,80)に移動させる</a><br>
+    <img src="./../image/sample2.png" name="myImage2" style="position:absolute;left:0px;top:80px;"><br>
+</div>
+</body>
+</html>

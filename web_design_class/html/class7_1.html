@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>７講義課題</title>
+    <script src="./../js/class7_1.js"></script>
+</head>
+<body>
+    !--radio buttonが押されている間は、その方向に2ピクセスずつ動く。縦は下へ、横は右へ--
+    <form name="radioForm">
+        <input type="radio" name="rd">縦方向
+        <input type="radio" name="rd">横方向
+        <input type="radio" name="rd">停止
+        <input type="button" value="動かす" onclick="moveImg()">
+    </form>
+    <img src="./../image/sample1.png" alt="sample1" name="img">
+    
+</body>
+</html>
