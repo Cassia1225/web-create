@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四則演算</title>
+    <script src="./../../js/class_8/sisoku.js"></script>
+</head>
+<body>
+    <form name="calcForm">
+    値1:<input type="text"name="number1" value="7"><br>
+    値2:<input type="text"name="number2" value="5"><br>
+    結果:<input type="text"name="result"><br>
+    <select name="calcType">
+    <option selected>足し算</option>
+    <option>引き算</option>
+    <option>掛け算</option>
+    <option>割り算</option>
+    </select>
+    <input type="button" value="計算する" onClick="calc()">
+    </form>
+</body>
+</html>
