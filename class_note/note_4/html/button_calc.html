@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script lang="JavaScript"><!--
+    function calc() {
+        n1 = document.calcForm.number1.value;
+        n2 = document.calcForm.number2.value;
+
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+        
+        document.calcForm.result.value = n1+n2;
+        
+    }
+
+    --></script>
+</head>
+<body>
+    <form name="calcForm">
+        値１：<input type="text" name="number1" value="7">
+        値２：<input type="text" name="number2" value="5">
+        <input type="text" name="result">
+        <input type="button" value="加算" onclick="calc()">
+    </form>
+</body>
+</html>
