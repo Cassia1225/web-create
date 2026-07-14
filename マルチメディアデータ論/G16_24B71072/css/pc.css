@@ -1,0 +1,9 @@
+body {
+    /* PC表示時（広画面）のベースとなる背景色などを指定 */
+    background-color: white; 
+}
+@media screen and (max-width: 679px){
+    body {
+    background-color: red;
+    }    
+}

@@ -1,0 +1,94 @@
+/* スマホ用 寒色系*/
+@media screen and (max-width: 768px){
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #eef7fb;
+    color: #2c4a5a;
+}
+
+header {
+    background-color: #d9edf7;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #bcdff1;
+}
+
+footer {
+    background-color: #d9edf7;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    border-top: 1px solid #bcdff1;
+}
+
+#ito-lab {
+    padding: 15px;
+}
+
+.lab-outline,
+.lab-seminar,
+.lab-images {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #3a6f8f;
+}
+
+h2 {
+    font-size: 18px;
+    color: #3a6f8f;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.lab-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin: 10px 0;
+    border: 3px solid #7ec8e3;
+}
+
+.lab-table th {
+    background-color: #bfe3f4;
+    border: 2px solid #7ec8e3;
+    padding: 8px;
+}
+
+.lab-table td {
+    padding: 8px;
+    border-bottom: 2px solid #cfe8f5;
+}
+
+.lab-table tr:nth-child(even) {
+    background-color: #f0f9fd;
+}
+
+pre {
+    background-color: #e6f3fa;
+    padding: 10px;
+    overflow-x: auto;
+    max-width: 100%;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.img-box {
+    text-align: center;
+}
+
+.lab-img {
+    width: 80%;
+    max-width: 250px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+}

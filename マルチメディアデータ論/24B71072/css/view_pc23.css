@@ -1,0 +1,40 @@
+@media screen and (min-width: 1200px) {
+    .lab-img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    body {
+        background-color: antiquewhite;
+    }
+
+    header, footer {
+    height: 10vh;
+    }
+
+    .lab-table {
+        background-color: rgb(122, 201, 203);
+    
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .lab-table th,
+    .lab-table td {
+        border: 1px solid white;
+        padding: 8px;
+    }
+
+    .lab-table th {
+        background-color: #5a90c5;
+        color: white;
+    }
+
+    h1 {
+    
+        background-color: rgb(210, 196, 181);
+    }
+}
+

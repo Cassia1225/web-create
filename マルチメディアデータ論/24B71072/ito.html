@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="飯島千智">
+    <meta name="description" content="研究室紹介">
+    <meta name="keywords" content="研究室紹介,伊東研究室">
+    <title>伊東研究室</title>
+
+    <script type="text/javascript" nonce="90ca345700cb4647b706100a7d1" src="//local.adguard.org?ts=1783402171476&amp;type=content-script&amp;dmn=cdn.inst-fs-sin-prod.inscloudgate.net&amp;url=https%3A%2F%2Fcdn.inst-fs-sin-prod.inscloudgate.net%2F1ca18646-e39b-421e-bda4-d5135f139d14%2Fito.html%3Ftoken%3DeyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6ImNkbiJ9.eyJyZXNvdXJjZSI6Ii8xY2ExODY0Ni1lMzliLTQyMWUtYmRhNC1kNTEzNWYxMzlkMTQvaXRvLmh0bWwiLCJ0ZW5hbnQiOiJjYW52YXMiLCJpYXQiOjE3ODMzNjI4MTYsImV4cCI6MTc4MzQ0OTIxNiwianRpIjoiZDMwODYxZWQtZjVlOC00NjA3LThhZjItMThmMGU0YzVmOWYyIn0.ZUrwMhbJ5dEepAewiQCw-kNYQua0f0Os_BkRQrAft8Q0BLlXror3JD6EUDncS5Md-Kd5e_snnWGPFDbis8EKyQ%26download%3D1%26content_type%3Dtext%252Fhtml&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><script type="text/javascript" nonce="90ca345700cb4647b706100a7d1" src="//local.adguard.org?ts=1783402171476&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="stylesheet" href="css/nav_sample.css" type="text/css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul class="nav-list">
+          <li class="nav_item"><a href="ito.html">伊東研究室</a></li>
+          <li class="nav_item"><a href="kadai1.html">中村研究室</a></li>
+          <li class="nav_item"><a href="Misajii.html">見坐地研究室</a></li>
+          <li class="nav_item"><a href="furuichi.html">古市研究室</a></li>
+          <li class="nav_item"><a href="oka.html">岡研究室</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<article id="ito-lab">
+
+    <section class="lab-outline">
+        <h1>伊東研究室</h1>
+        <p>伊東研究室では、CGやAR、電磁波伝播シミュレーション、感染症のシミュレーションなど幅広い研究テーマを取り扱っています。3年生ではUnityを活用して課題を行ったり、卒業生の論文や一般の論文の輪講発表を行っています。卒業論文では、VRやARを利用したアプリケーション開発が多く、防災や教育などのさまざまな分野へ応用しています。また、プログラミングや数値解析の技術を活用し、現実世界の課題を解決する研究に取り組んでいます。研究室は23号館206室で活動しています。
+        </p>
+    </section>
+
+    <section class="lab-seminar">
+        <h2>ゼミナールで学ぶ内容</h2>
+
+        <p>1Qでは、卒業生の卒業論文を読み、その内容をパワポにまとめてゼミ内で発表しました。また、グループに分かれてUnityの基礎知識を学びました。2Qでは、一般に公開されている情報系の論文を読み、同様にパワポにまとめて発表を行いました。Unityの学習と、髙橋研究室との合同授業でモーションキャプチャを活用した実習を行いました。</p>
+
+        <table class="lab-table">
+            <tr>
+                <th>月</th>
+                <th>学習内容</th>
+            </tr>
+            <tr>
+                <th>4月</th>
+                <td>Unity、卒論輪講</td>
+            </tr>
+            <tr>
+                <th>5月</th>
+                <td>Unity、卒論輪講</td>
+            </tr>
+            <tr>
+                <th>6月</th>
+                <td>Unity、一般輪講</td>
+            </tr>
+            <tr>
+                <th>7月</th>
+                <td>モーションキャプチャ、一般輪講</td>
+            </tr>
+        </table>
+<pre><code>
+using UnityEngine;
+
+public class SimpleMover : MonoBehaviour
+{
+  // Inspector から編集できるフィールド
+  public float speed = 2.0f;
+
+  // 最初の回だけ呼ばれる 1
+  void Start()
+  {
+    Debug.Log("SimpleMover started");
+  }
+
+  // 毎フレーム呼ばれる描画と同期、可変レート ()
+  void Update()
+  {
+  // Time.deltaTime は前フレームからの経過時間秒[]
+  transform.Translate(Vector3.right * speed * Time.deltaTime);
+  }
+}</code></pre>
+<p>このプログラムは、Unity上でオブジェクトを一定の速度で右方向に移動させるスクリプトです。Startメソッドは開始時に一度だけ実行され、Updateメソッドは毎フレーム実行されます。speedの値を変更することで移動速度を調整することができます。</p>
+    </section>
+
+    <section class="lab-images">
+        <h2>研究室の様子</h2>
+
+        <div class="img-box">
+            <img src="img/pic1.jpg" alt="研究室の様子1" class="lab-img">
+            <img src="img/pic2.jpg" alt="研究室の様子2" class="lab-img">
+        </div>
+
+    </section>
+
+</article>
+</main>
+
+<footer>
+    <address>
+        氏名：飯島千智
+        Email：
+        <a href="mailto:cich24018@g.nihon-u.ac.jp?subject=問い合わせ">
+            cich24018@g.nihon-u.ac.jp
+        </a>
+    </address>
+</footer>
+
+</body>
+</html>

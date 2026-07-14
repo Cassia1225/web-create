@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="author" content="田中大翔" />
+<meta name="description" content="研究室紹介を行います" />
+<meta name="keywords" content="研究室,紹介," />
+<title>岡研究室</title>
+<script type="text/javascript" nonce="90ca345700cb4647b706100a7d1" src="//local.adguard.org?ts=1783402171476&amp;type=content-script&amp;dmn=cdn.inst-fs-sin-prod.inscloudgate.net&amp;url=https%3A%2F%2Fcdn.inst-fs-sin-prod.inscloudgate.net%2Fa2708f5e-8910-4223-b238-e6e9c0d9c214%2Foka.html%3Ftoken%3DeyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6ImNkbiJ9.eyJyZXNvdXJjZSI6Ii9hMjcwOGY1ZS04OTEwLTQyMjMtYjIzOC1lNmU5YzBkOWMyMTQvb2thLmh0bWwiLCJ0ZW5hbnQiOiJjYW52YXMiLCJpYXQiOjE3ODMzODg0NjksImV4cCI6MTc4MzQ3NDg2OSwianRpIjoiOWQxZGU5ZmItY2Q5YS00MzQ5LWIxZDItYzU4OGQxOWZkYWU3In0.yJc5mQnFMSLCN-Wrf_i33K0OaJJIu7N5j7GZdYVsfkn4hn8wxLUxnuEJWLWqqTKP_NBDmSd_UJWF0YsUZ9QzKg%26download%3D1%26content_type%3Dtext%252Fhtml&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><script type="text/javascript" nonce="90ca345700cb4647b706100a7d1" src="//local.adguard.org?ts=1783402171476&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="stylesheet" type="text/css" href="css/prac2.css"/>
+<link rel="stylesheet" type="text/css" href="css/nav_sample.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul class="nav-list">
+          <li class="nav_item"><a href="oka.html">岡研究室</a></li>
+          <li class="nav_item"><a href="kadai1.html">中村研究室</a></li>
+          <li class="nav_item"><a href="Misajii.html">見坐地研究室</a></li>
+          <li class="nav_item"><a href="furuichi.html">古市研究室</a></li>
+          <li class="nav_item"><a href="ito.html">伊東研究室</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+    <article id="oka">
+        <section class="lab-outline">
+        <h1>数理情報工学科 岡研究室</h1>
+        <h2>研究室の概要</h2>
+        <p>岡研究室では、ゲームエンジンUnityやCG制作に使用するblenderを用いてゲーム制作や映像制作、VRやAR技術の研究を行っています。<br>
+            他の研究室と異なり、講義を行わず各自で制作を行いながら学んでいく、アウトプット学習がメインとなります。<br>
+            また、桜泉祭などでは制作したゲームの体験会を行っています。3年次にはチームで作品を制作し、4年次では、作成した作品や個人製作の作品を用いて研究を行います。</p>
+        <h3>所属人数</h3>
+        <ul>
+            <li>院生：4名</li>
+            <li>4年生：13名</li>
+            <li>3年生：12名</li>
+        </ul>
+        <p>場所：津田沼キャンパス 23号館208</p>
+
+        </section>
+        <section class="lab-seminar">
+        <h2>ゼミナールで学ぶ内容</h2>
+        <p>チームを組んでゲーム制作に取り組みます。ゲーム制作や映像制作を行いながらアプリケーションの操作やゲームプログラミングに取り組みます。</p>
+        <table class="lab-table">
+            <caption>各クオーター・月ごとの取り組み</caption>
+            <tr><th>クオーター</th><th>月</th><th>実施内容</th></tr>
+            <tr><th>1Q</th><th>4月</th><td>ゲーム制作、新入生歓迎会</td></tr>
+            <tr><th></th><th>5月</th><td>ゲーム制作</td></tr>
+            <tr><th>2Q</th><th>6月</th><td>ゲーム制作</td></tr>
+            <tr><th></th><th>7月</th><td>ゲーム制作、中間発表</td></tr>
+        </table>
+        
+        <h3>主要なアプリケーション</h3>
+        <ul>
+            <li>blender</li>
+            <li>Unity</li>
+        </ul>
+        <h3>主要なプログラミング言語</h3>
+        <ul>
+            <li>C#</li>
+        </ul>
+        <p>以下のプログラムは、ゲーム制作で使用するC#のプログラム例です。</p>
+        <pre>
+using UnityEngine;
+using UnityEngine.UI; // UIを扱うために必要
+
+public class ButtonController : MonoBehaviour
+{
+    // インスペクターでUnityのButtonコンポーネントを紐付けます
+    public Button myButton;
+
+    void Start()
+    {
+        // ボタンがクリックされたときに実行するメソッドを登録
+        myButton.onClick.AddListener(OnButtonClick);
+    }
+
+    void OnButtonClick()
+    {
+        Debug.Log("ボタンがクリックされました！");
+    }
+}
+        </pre>
+        </section>
+        <section class="lab-images">
+        <h2>研究室の様子</h2>
+        <img src="img/pic1.jpg" alt="研究室の画像" class="lab-img">
+        </section>
+    </article>
+    </main>
+    <footer>
+        <address>
+            氏名：田中大翔
+            Email：<a href="mailto:cihi24195`g.nihon-u.ac.jp?subject=問い合わせ">cihi24195@g.nihon-u.ac.jp</a>
+        </address>
+    </footer>
+</body>
+</html>

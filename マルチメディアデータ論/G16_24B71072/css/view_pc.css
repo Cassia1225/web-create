@@ -1,0 +1,106 @@
+@media screen and (min-width: 1200px) {
+
+    body {
+        background-color: antiquewhite;          
+        color: #4a3f35;                          
+        font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+        line-height: 1.8;
+        letter-spacing: 0.02em;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    header, footer {
+        height: 10vh;                            
+    }
+
+    footer {
+        background-color: #d2c4b5;               
+        color: #4a3f35;
+        border-top: 3px solid #c26a4a;           
+    }
+
+    article {
+        max-width: 1000px;
+        margin: 0 auto;                          
+        padding: 2vh 0;
+    }
+
+    section {
+        background-color: #fffaf3;               
+        border: 1px solid #ecdccb;
+        border-radius: 12px;
+        padding: 28px 32px;
+        margin: 24px 0;
+        box-shadow: 0 4px 14px rgba(150, 110, 80, 0.10); 
+    }
+
+    h1 {
+        background-color: rgb(210, 196, 181);    
+        color: #4a3f35;
+        padding: 16px 24px;
+        border-radius: 10px;
+        border-left: 8px solid #c26a4a;          
+        letter-spacing: 0.05em;
+    }
+
+    h2 {
+        color: #a85638;                          
+        border-bottom: 2px solid #e6d5c3;
+        padding-bottom: 6px;
+        margin-top: 8px;
+    }
+
+    h3 {
+        color: #b5651d;
+        border-left: 4px solid #d8b89a;
+        padding-left: 10px;
+    }
+
+    .lab-img {
+        width: 100%;
+        max-width: 600px;                       
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(150, 110, 80, 0.18);
+        transition: transform .3s ease;
+    }
+
+    .lab-img:hover {
+        transform: scale(1.02);                
+    }
+
+    .img-box {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .lab-table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 700px;
+        border-radius: 10px;
+        overflow: hidden;                        
+        box-shadow: 0 3px 10px rgba(150, 110, 80, 0.12);
+    }
+
+    .lab-table th,
+    .lab-table td {
+        border: 1px solid #fff;
+        padding: 10px 12px;
+    }
+
+    .lab-table th {
+        background-color: #c26a4a;               
+        color: #fff;
+    }
+
+    .lab-table td {
+        background-color: #fdf1e5;               
+        color: #4a3f35;
+    }
+
+    .lab-table tr:hover td {
+        background-color: #f7e2cf;               
+    }
+}

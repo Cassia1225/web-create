@@ -1,0 +1,156 @@
+@media screen and (max-width: 1024px) and (orientation: landscape){
+    body{
+        padding-left: 12%; /* 左側に200pxの余白を作ってコンテンツを右に寄せる */
+    }
+    nav{
+        font-size: 16px;
+    }
+    /* 2. メニュー（ul）を左側に縦1列で固定する */
+    nav ul:first-of-type {
+        position: fixed;     /* 画面の左側に固定（スクロールしても付いてくる） */
+        left: 0;
+        top: 0;
+        width: 10%;        /* メニューの横幅 */
+        height: 100vh;       /* 画面の一番下まで背景色を伸ばす */
+        background-color: #6fdd6f; /* メニューの背景色（薄いグレー） */
+        padding: 3% 2%;
+        margin: 0;
+        justify-content: flex-start;
+        text-align: center;
+        list-style: none;    /* ドット（中黒）を消す */
+        border-right: 1px solid #e0e0e0; /* 右側の区切り線 */
+        box-sizing: border-box;
+        gap: 1%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait){
+    body{
+        padding-left: 2%; 
+        padding-top: 60px; /* 📊 修正：メニューが50px固定になったため、少し余裕を持たせて被りを防ぐ */
+    }
+    nav{
+        font-size: 16px;
+    }
+    nav ul:first-of-type {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;          
+        height: 50px;        /* 📊 修正：％指定から50px固定に変更して文字の潰れを防止 */
+        background-color: #6fdd6f;
+        padding: 0 2%;       /* 📊 修正：上下のpaddingを0にしてスッキリ配置 */
+        display: flex;       /* 📊 修正：Flexboxを有効化 */
+        flex-direction: row;  
+        align-items: center; /* 📊 追加：ボタンを上下中央に綺麗に並べる */
+        justify-content: flex-start;
+        text-align: center;
+        list-style: none;    
+        border-bottom: 1px solid #e0e0e0;
+        gap: 2%;
+        margin: 0;           /* ⚡ 重要：上の薄緑色の隙間を消すリセット */
+        box-sizing: border-box; /* ⚡ 重要：幅と高さの計算崩れを防ぐ */
+    }
+
+    nav ul:first-of-type li {
+        height: 100%;
+        margin-bottom: 0; /* 横並びなので縦の余白は不要 */
+        align-items: center;
+        display: flex;
+    }
+    article{
+        scroll-margin-top: 8vh;
+        margin-bottom: 3%;
+    }
+}
+
+.lab-img {
+    width: 90%;  
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.lab-table{
+    width: 100%;
+}
+.lab-table th {
+    background: #aaffaa;
+}
+
+.lab-table td {
+    background: #ffffff;
+}
+
+/* ⚡ 重要：共通の nav 自体も最上部に固定するよう修正 */
+nav {
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;       
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+/* 3. メニュー内の各項目の隙間を空ける */
+ul:first-of-type li {
+    margin-bottom: 18px;
+}
+
+/* 4. リンクの見た目を整える */
+ul:first-of-type li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block; 
+}
+
+ul:first-of-type li a:hover {
+    color: #0056b3; 
+}
+
+footer {
+	height: 10vh;
+}
+
+footer, nav li{
+   border: 1px solid #dddddd;
+}
+h1{
+    padding: 4px 5px;
+    color: #494949;
+    background: #f4f4f4;
+    border-left: solid 8px #4bbc47;
+    border-bottom: solid 5px #d7d7d7;
+}
+h2{
+    text-decoration: underline double #12C144;
+    text-underline-offset: 5px;
+}
+body{
+    background-color: #ddffdd;
+    font-size: 16px;
+    margin: 0;
+    padding-right: 2%;
+    font-family: sans-serif;
+}
+pre{
+    width: fit-content;
+    text-align: left;
+    padding: 2%;
+    background-color: #ffffff;
+    border-radius: 5%;
+    margin-left: 10%;
+}
+article{
+    background-color: #eeffee;
+    padding: 2% 2%;
+}
+header{
+    background: #5f5f5f;
+}

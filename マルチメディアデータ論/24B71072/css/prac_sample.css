@@ -1,0 +1,46 @@
+/*ブロックレベル要素の背景色を設定*/
+h1, p, ol, ul, dl,dt, dd, pre, form, blockquote {
+	background: #FFB6C1;
+}
+
+/*インライン要素の背景色を設定*/
+abbr, em, strong, code, dfn, samp, cite, q, sub, sup, del, ins, a,input {
+	background: #FFF8AA;
+	border: 1px solid black;
+}
+
+/*その他の設定*/
+h1 {
+ color: #00ffff ;	
+}
+
+li {
+ color: #0000ff ;
+}
+
+dt {
+	float: left ; 
+	clear: left ; 
+	border: solid 1px #BA55D3; 
+	width: 20%;
+	color: #ff0000;
+}
+
+dd {
+	float: left ;
+	border: solid 1px #BA55D3; 
+	width: 50%;
+	margin: 0;
+}
+
+pre {
+	clear: both;
+	background-color: #f3f3f3;
+	width : 80%;
+	margin: 10% 5%;
+	padding : 2%;
+	max-height: 10em; 
+	overflow: auto;
+
+}
+

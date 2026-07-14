@@ -1,0 +1,54 @@
+.lab-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.lab-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+}
+
+.lab-table th,
+.lab-table td {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+.lab-table th {
+    background-color: #2f5d8c;
+    color: white;
+}
+
+.lab-table td {
+    background-color: #333333;
+    color: white;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    border-left: 6px solid #6fa8dc;
+    border-bottom: 1px solid #666666;
+    padding-left: 10px;
+}
+
+.lab-outline h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lab-seminar h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header, footer {
+    background-color: #759dc4;
+}
+
+footer address {
+    color: white;
+}
+
+.lab-table tr:hover td {
+    background-color: #555555;
+}

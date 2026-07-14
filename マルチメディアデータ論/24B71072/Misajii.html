@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="宮下洋貴" />
+    <meta name="description" content="見坐地研究室を紹介するページです。" />
+    <meta name="keywords" content="見坐地研究室，研究室紹介，ゼミナール" />
+    <title>見坐地研究室</title>
+    
+    <script type="text/javascript" nonce="90ca345700cb4647b706100a7d1" src="//local.adguard.org?ts=1783402171476&amp;type=content-script&amp;dmn=cdn.inst-fs-sin-prod.inscloudgate.net&amp;url=https%3A%2F%2Fcdn.inst-fs-sin-prod.inscloudgate.net%2Ff99b73b2-eb5f-4786-b74c-323632687939%2FMisajii.html%3Ftoken%3DeyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6ImNkbiJ9.eyJyZXNvdXJjZSI6Ii9mOTliNzNiMi1lYjVmLTQ3ODYtYjc0Yy0zMjM2MzI2ODc5MzkvTWlzYWppaS5odG1sIiwidGVuYW50IjoiY2FudmFzIiwiaWF0IjoxNzgzMzc0ODI5LCJleHAiOjE3ODM0NjEyMjksImp0aSI6IjNjZDA2MmFkLTJiYzctNGQ1NC1hZTMyLTI1NDEzMDg1MmMyMSJ9.SYYyRDcqUpyEsgvDg12vzkYNDFTYpKQc2Vgu7Nf4r7ivAMxqQVX6UGsvffm5neagnSUJyMYN6JuAXF6zusBuHw%26download%3D1%26content_type%3Dtext%252Fhtml&amp;app=com.google.Chrome&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><script type="text/javascript" nonce="90ca345700cb4647b706100a7d1" src="//local.adguard.org?ts=1783402171476&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="stylesheet" href="prac2.css" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="nav-list">
+          <li class="nav_item"><a href="Misajii.html">見坐地研究室</a></li>
+          <li class="nav_item"><a href="kadai1.html">中村研究室</a></li>
+          <li class="nav_item"><a href="furuichi.html">古市研究室</a></li>
+          <li class="nav_item"><a href="ito.html">伊東研究室</a></li>
+          <li class="nav_item"><a href="oka.html">岡研究室</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+<article id="misai-lab">
+    <section class="lab-outline">
+        <h1>見坐地研究室</h1>
+        <p>
+        見坐地研究室では、自動車の防音材の遮音特性や音響特性、そしてそれらが人体に与える影響について研究しています。
+        静粛性の高い快適な車内空間の実現を目指しています。
+        </p>
+    </section>
+    <section class="lab-seminar">
+        <h2>ゼミナールで学ぶ内容</h2>
+        <p>
+        遮音特性や音響の基礎理論を出発点として、微分方程式をはじめとする高等数学を用いながら、
+        波動方程式、SEA法、防音材のBiot理論、さらに機械学習の基礎と応用について学び、
+        研究を進めます。また、課題では出された内容に対して次の授業に発表を行い意見を交換し合い内容理解を深めています。
+        </p>
+        <table class="lab-table">
+    <tr>
+        <th>クオーター</th>
+        <td>学習内容</td>
+    </tr>
+    <tr>
+        <th><span>1Q</span></th>
+        <td>音響の基礎</td>
+    </tr>
+    <tr>
+        <th><span>2Q</span></th>
+        <td>波動方程式などの計算</td>
+    </tr>
+    <tr>
+        <th><span>3Q</span></th>
+        <td>人体について</td>
+    </tr>
+    <tr>
+        <th><span>4Q</span></th>
+        <td>資格勉強</td>
+    </tr>
+</table>        <p>
+        以下は、質量則(Mass Law)を用いて防音材の音響透過損失(遮音性能)を
+        計算するプログラムの例です。        </p>
+        <pre><code>#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int main(void) {
+    double surface_density = 8.0;  
+    double freq = 500.0;           
+
+    double TL = 20 * log10(surface_density * freq) - 47.4;
+
+    printf("面密度: %.1f kg/m^2\n", surface_density);
+    printf("周波数: %.1f Hz\n", freq);
+    printf("透過損失 TL = %.2f dB\n", TL);
+
+    return 0;
+}
+</code></pre>
+    </section>
+    <section class="lab-images">
+        <h2>研究室の様子</h2>
+        <img src="img/S__108650500.jpg" alt="ミーティングテーブルとホワイトボードのある研究室内の様子" class="lab-img" />
+    </section>
+</article>
+</main>
+<footer>
+    <address>
+        氏名：宮下洋貴<br />
+        Email:
+        <a href="mailto:cihi24099@nihon-u.ac.jp?subject=問い合わせ">
+            cihi24099@nihon-u.ac.jp
+        </a>
+    </address>
+</footer>
+</body>
+</html>
