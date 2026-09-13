@@ -1,0 +1,145 @@
+.employee-form,
+.employee-id,
+.vpn,
+.cation,
+.rules {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#employeeList {
+    overflow-x: auto;
+}
+
+.employee-form {
+    width: max-content;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+input[type="text"] {
+    width: 140px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.vpn {
+    min-height: 30px;
+}
+
+.vpn label,
+.rules label {
+    white-space: nowrap;
+}
+
+.rules p {
+    min-width: 0;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid;
+    overflow-wrap: anywhere;
+}
+
+.cation {
+    min-width: 0;
+    max-width: 530px;
+    margin: 0;
+    padding: 7;
+    border: 1px solid;
+    overflow-wrap: anywhere;
+}
+
+.employee-id {
+    align-items: flex-end;
+}
+
+.delete-employee {
+    width: 48px;
+    height: 30px;
+}
+
+#addEmployee {
+    margin-top: 8px;
+    margin-left: 60px;
+}
+
+.date-area {
+    white-space: nowrap;
+}
+
+/* 日付欄は横並びのまま、選択パネルだけ別に開く */
+.date-input {
+    min-width: 125px;
+    height: 30px;
+}
+
+#dateDialog {
+    width: 300px;
+    max-width: calc(100vw - 64px);
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 12px;
+}
+
+#dateDialog::backdrop {
+    background: #0005;
+}
+
+#dateDialog h3 {
+    margin: 0;
+}
+
+#dateDialog p {
+    color: #555;
+    font-size: 14px;
+}
+
+.drums {
+    display: flex;
+    gap: 8px;
+}
+
+.drum {
+    flex: 1;
+    min-width: 0;
+    height: 160px;
+    padding: 64px 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    border-radius: 8px;
+    background: linear-gradient(#f7f7f7 64px, #dfedff 64px, #dfedff 96px, #f7f7f7 96px);
+}
+
+.drum div {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    scroll-snap-align: center;
+    cursor: pointer;
+}
+
+.drum:focus-visible {
+    outline: 2px solid #2675d8;
+}
+
+.date-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.date-actions button {
+    padding: 8px;
+}

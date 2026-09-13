@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="cation">
+        <p>
+            ＜申請の対象＞<br>
+            ・申請のパソコンが共有パソコンであり、VPN接続者を追加する場合<br>
+            ・個人所有のパソコンで、VPN接続不要としていたが必要になった場合<br>
+            ※3か月間利用がない方は登録を解除します。
+        </p>
+    </div>
+
+    <div id="employeeList">
+        <div class="employee-form">
+            <div class="employee-id">
+                <button type="button" class="delete-employee">削除</button>
+                <label class="form-item">
+                    社員ID<input type="text" name="employeeID">
+                </label>
+            </div>
+            <label class="form-item">
+                名前<input type="text" name="employeeName">
+            </label>
+            <label class="form-item">
+                PC番号<input type="text" name="PCnumber">
+            </label>
+
+            <div class="form-item">
+                <span>VPN期間</span>
+                <div class="vpn">
+                    <label><input type="radio" name="vpnPeriod0" value="permanent" checked> 永年</label>
+                    <label><input type="radio" name="vpnPeriod0" value="limited"> 期間限定</label>
+                    <span class="date-area" hidden>
+                        <button type="button" class="date-input" name="startDate" aria-label="開始日" aria-haspopup="dialog">年月日</button>
+                        ～
+                        <button type="button" class="date-input" name="endDate" aria-label="終了日" aria-haspopup="dialog">年月日</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button type="button" id="addEmployee">人を追加</button>
+
+    <h2>利用規約</h2>
+    <div class="rules">
+        <p>
+            情報セキュリティ事故（情報漏洩、紛失、法令違反等）発生時は<br>
+            アイリスグループ就業規則で罰則を受けることに同意します。<br>
+            <a id="check-link" href="https://google.com" target="_blank" rel="noopener">※同意書リンク</a>
+        </p>
+        <label><input id="agree-check" type="checkbox" name="agreement" disabled> 同意する</label>
+    </div>
+    <!-- 開始日・終了日で共通の日付選択パネル -->
+    <dialog id="dateDialog" aria-labelledby="dateTitle">
+        <h3 id="dateTitle">日付を選択</h3>
+        <p>上下にスクロールして選択</p>
+        <div class="drums">
+            <div id="yearDrum" class="drum" role="spinbutton" tabindex="0" aria-label="年"></div>
+            <div id="monthDrum" class="drum" role="spinbutton" tabindex="0" aria-label="月"></div>
+            <div id="dayDrum" class="drum" role="spinbutton" tabindex="0" aria-label="日"></div>
+        </div>
+        <div class="date-actions">
+            <button type="button" id="clearDate">クリア</button>
+            <button type="button" id="cancelDate">キャンセル</button>
+            <button type="button" id="saveDate">決定</button>
+        </div>
+    </dialog>
+</body>
+</html>
