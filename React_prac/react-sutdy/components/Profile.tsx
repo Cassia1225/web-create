@@ -4,6 +4,7 @@ type ProfileProps = {
     isStudent: boolean;
 };
 
+
 export function Profile({name, age, isStudent}: ProfileProps) {
     return (
         <>
