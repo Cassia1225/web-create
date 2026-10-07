@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+
+/* 見出し */
+h1 {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+                 "Hiragino Mincho ProN", "HG明朝E",
+                 "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+
+    color: #FFF;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+
+    text-shadow:
+        0 0 5px rgba(31, 50, 53, 0.8),
+        0 0 5px rgba(31, 50, 53, 0.3);
+
+    margin: 0;
+
+    opacity: 0.7;
+
+    background-color: wheat;
+
+    
+}
+
+
+/* リンクにマウスを乗せたとき */
+a:hover {
+    opacity: 0.6;
+}
+
+
+/* --------------------
+   header
+-------------------- */
+
+header {
+    background-image: url(./pokemon.jpeg);
+
+    height: auto;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* header内のリンク */
+header a {
+    color: #FFF;
+    font-weight: bold;
+
+    text-shadow:
+        0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ナビゲーション全体 */
+header nav {
+    position: absolute;
+    right: 0;
+}
+
+
+/* ナビゲーションのリスト */
+header ul {
+    display: flex;
+
+    margin: 0;
+    padding: 20px;
+    gap: 20px;
+}
+
+
+/* 各ナビゲーション項目 */
+header li {
+    padding: 0 15px;
+}
+
+
+/* 見出しとロゴをまとめる部分 */
+.contentWrapper {
+    width: 70%;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding: 18rem 0;
+}
+
+#ball {
+    width: 100px;
+    height: 100px;
+
+    opacity: 0.6;
+}
