@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type {Pokemon} from "./../model/Pokemon";
-import {PokemonCard} from "./../components/PokemonCard";
+import {PokemonCard} from "./../pages/PokemonCard";
 
 export function Lesson10() {
     const [pokemon, setPokemon] = useState<Pokemon | null>(null);
