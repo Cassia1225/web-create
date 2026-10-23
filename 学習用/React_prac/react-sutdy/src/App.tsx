@@ -10,13 +10,13 @@ import {Lesson7} from "./../pages/Lesson7";
 import {TestLesson8} from "./../pages/TestLesson8";
 import {Lesson8} from "./../pages/Lesson8";
 import {Lesson9} from "./../pages/Lesson9";
-import {Lesson10} from "./../pages/Lesson10";
+import {PokemonSearchForm} from "./../pages/PokemonSearchForm";
 
 function App() {
   
   return(
     <div>
-        <Lesson10 />
+        <PokemonSearchForm />
     </div>
   );
 }
