@@ -11,12 +11,14 @@ import {TestLesson8} from "./../pages/TestLesson8";
 import {Lesson8} from "./../pages/Lesson8";
 import {Lesson9} from "./../pages/Lesson9";
 import {PokemonSearchForm} from "./../pages/PokemonSearchForm";
+import {SpotCard2} from "./../compornents/SpotCard2";
+import {Lesson5_html} from "./../study/Lesson5_html";
 
 function App() {
   
   return(
     <div>
-        <PokemonSearchForm />
+      <Lesson5_html />
     </div>
   );
 }

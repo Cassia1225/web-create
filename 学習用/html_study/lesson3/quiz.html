@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson3クイズ</title>
+
+    <style>
+        .border {
+            border: 1px solid #000;
+        }
+
+        #anime-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+       nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        list-style: none;
+        padding: 0;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>アニメ聖地巡礼マップ</h1>
+
+        <nav aria-label="メインナビゲーション">
+        <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#osusume">スポット一覧</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <div class="border"></div>
+
+    <main>
+        <h2>アニメ聖地巡礼マップへようこそ</h2>
+        <p>お気に入りのアニメの舞台を探せるサイトです。</p>
+
+        <section id="osusume">
+            <h2>おすすめ聖地一覧</h2>
+
+            <article>
+            <h3>【スポットA】</h3>
+            <p>
+                作品名 : コナン<br>
+                場所 : 東京都
+                作品の紹介文
+            </p>
+        </article>
+
+        <article>
+            <h3>【スポットB】</h3>
+            <p>
+                作品名 : ポケモン<br>
+                場所 : 千葉県<br>
+                作品の紹介文
+            </p>
+        </article>
+        </section>
+
+        
+
+        <div class="border"></div>
+
+        <aside>
+            <h2>関連情報</h2>
+            <ul id="anime-info">
+                <li><a href="#">アニメ公式サイト</a></li>
+                <li><a href="#">Google Maps</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <div class="border"></div>
+
+    <footer>
+        <p>&copy; 2026 Anime Map</p>
+    </footer>
+</body>
+</html>

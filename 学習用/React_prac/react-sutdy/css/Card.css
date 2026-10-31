@@ -1,0 +1,28 @@
+
+.spot-card {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  
+}
+
+.spot-card h3 {
+  color: blue;
+}
+
+.spot-card__title {
+  color: red;
+}
+
+.spot-card p {
+  color: green;
+}
+
+.spot-card__location {
+  color: gray;
+}
+
+.spot-card__link:hover {
+  color: red;
+}

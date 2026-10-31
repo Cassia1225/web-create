@@ -1,0 +1,28 @@
+
+:root {
+  --primary-color: #2563eb;
+  --card-bg-color: #ffffff;
+}
+
+.spot-card {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.spot-card__title {
+  color: var(--primary-color);
+}
+
+.spot-card__location {
+  color: rgb(174, 52, 52);
+}
+
+.spot-card__link {
+  color: var(--primary-color);
+}
+
+.spot-card__link:hover {
+  color: red;
+}
