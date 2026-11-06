@@ -1,4 +1,4 @@
-import "./../css/Lesson5_style.css";
+import "./../css/Lesson6_style.css";
 
 export function Lesson5_html() {
     return (

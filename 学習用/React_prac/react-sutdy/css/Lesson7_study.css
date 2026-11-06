@@ -1,0 +1,38 @@
+:root {
+  --color-primary: #2563eb;
+  --color-text: #111827;
+  --color-muted: #475569;
+  --color-surface: #ffffff;
+}
+
+.spot-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 450px;
+  padding: 1.5rem;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-family: system-ui, sans-serif;
+}
+
+.spot-card__title {
+  margin: 0 0 1rem;
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.spot-card__location {
+  margin: 0 0 0.75rem;
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.spot-card__description {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
