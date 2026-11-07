@@ -1,4 +1,5 @@
 import "../css/ProfileCard.css"
+import "../css/Lesson8_style.css"
 
 type ProfileCardProps = {
     name: string;
@@ -20,6 +21,9 @@ export function Lesson7_test({name,role,description}:ProfileCardProps) {
             <p className="profile-card__description">
                 {description}
             </p>
+            <h3>
+                hello
+            </h3>
         </article>
     );
 }

@@ -1,0 +1,30 @@
+
+.spot-card {
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 56px 24px 24px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.spot-card__badge {
+  background-color: #2563eb;
+  color: white;
+  border-radius: 6px;
+  padding: 6px 10px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.spot-card__title {
+  font-size: 1.5rem;
+}
+
+.spot-card__location {
+  color: #475569;
+}

@@ -15,12 +15,18 @@ import {SpotCard2} from "./../compornents/SpotCard2";
 import {Lesson5_html} from "./../study/Lesson5_html";
 import {Lesson7_html} from "./../study/Lesson7_html";
 import {Lesson7_test} from "./../study/lesson7_test";
+import {ProfileCard} from "./../study/Lesson8";
+import {SpotCard} from "./../study/lesson9_html"
 
 function App() {
   
   return(
     <div>
-      <Lesson7_test name="ひげひろ" role="tokyo" description="hello"/>
+      <SpotCard 
+      name="プロフィール" 
+      location="エンジニア"
+      recommended={true}
+      />
     </div>
   );
 }
