@@ -25,6 +25,7 @@ function App() {
   return(
     <div>
       <Lesson11 />
+      <PokemonSearchForm />
     </div>
       
   );
