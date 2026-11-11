@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+            gap: 16px;
+        }
+        .card2 {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">A</div>
+        <div class="card card2">B</div>
+        <div class="card">C</div>
+        <div class="card">D</div>
+        <div class="card">E</div>
+        <div class="card">F</div>
+    </div>
+</body>
+</html>

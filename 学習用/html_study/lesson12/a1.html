@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn {
+            background-color: aqua;
+            color: black;
+        }
+        .btn:active {
+            background-color: blue;
+        }
+        .btn:focus-visible {
+            outline: 3px solid #2ea5ea;
+            outline-offset: 3px;
+        }
+        h1:active {
+            color: red;
+        }
+        .btn:disabled {
+            background-color: #94a3b8;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <button type="button" class="btn" disabled="true">click here</button>
+</body>
+</html>

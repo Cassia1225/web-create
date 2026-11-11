@@ -1,0 +1,21 @@
+
+.spot-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
+    gap: 16px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.spot-card {
+    padding: 16px;
+    border: 2px solid #44e5fa;
+    border-radius: 10px;
+    box-sizing: border-box;
+}

@@ -16,18 +16,17 @@ import {Lesson5_html} from "./../study/Lesson5_html";
 import {Lesson7_html} from "./../study/Lesson7_html";
 import {Lesson7_test} from "./../study/lesson7_test";
 import {ProfileCard} from "./../study/Lesson8";
-import {SpotCard} from "./../study/lesson9_html"
+import {SpotCard} from "./../study/lesson9_html";
+import {Lesson10} from "./../study/Lesson10_html";
+import {Lesson11} from "./../study/Lesson11_html";
 
 function App() {
   
   return(
     <div>
-      <SpotCard 
-      name="プロフィール" 
-      location="エンジニア"
-      recommended={true}
-      />
+      <Lesson11 />
     </div>
+      
   );
 }
 
