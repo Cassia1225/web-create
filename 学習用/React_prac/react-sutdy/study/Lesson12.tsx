@@ -1,7 +1,7 @@
 
-import "./Lesson12.css";
+import "./../css/Lesson12.css";
 
-export function Lesson12() {
+export function Lesson12_html() {
   return (
     <section className="spot-section">
       <article className="spot-card">

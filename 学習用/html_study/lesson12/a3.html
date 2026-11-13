@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .list li:nth-child(even) {
-            background-color: #dbeafe;
-        }
+        .title::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 24px;
+            margin-right: 10px;
+            background-color: #0d9488;
+            vertical-align: middle;
+         }
     </style>
 </head>
 <body>
-    <ul class="list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React</li>
-        <li>TS</li>
-    </ul>
+    <h2 class="title">聖地スポット一覧</h2>
 </body>
 </html>

@@ -19,12 +19,13 @@ import {ProfileCard} from "./../study/Lesson8";
 import {SpotCard} from "./../study/lesson9_html";
 import {Lesson10} from "./../study/Lesson10_html";
 import {Lesson11} from "./../study/Lesson11_html";
+import {Lesson12_html} from "./../study/Lesson12"
 
 function App() {
   
   return(
     <div>
-      <Lesson11 />
+      <Lesson12_html />
       <PokemonSearchForm />
     </div>
       
